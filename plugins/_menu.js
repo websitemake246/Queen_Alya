@@ -37,30 +37,30 @@ let currentDesignIndex = 0;
 function getNextMenuDesign() {
   const designs = [
     {
-      header: "✦✧━━━⟪ *{botname}* ⟫━━━✧✦\n",
+      header: "✦✧━━━⟪ *{botname}*® ⟫━━━✧✦\n",
       lineSeparator: "┃ ",
-      commandPrefix: "⚡ ",
-      footer: "✦✧━━━━━━━━━━━━━✧✦",
-      emoji: "🌟",
-      greetingText: "Step into the realm of unlimited power!",
+      commandPrefix: "🕸️ ",
+      footer: "✦✧━━━━━━━━━━━━━™✧✦",
+      emoji: "🦋",
+      greetingText: "Apologize to me, you're in my world!",
       categorySeparator: "✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦\n",
     },
     {
       header: "❖❖━━━━━⟪ *{botname}* ⟫━━━━━❖❖\n",
       lineSeparator: "┃ ",
-      commandPrefix: "🌌 ",
-      footer: "❖❖━━━━━━━━━━━━❖❖",
+      commandPrefix: "👽 ",
+      footer: "❖❖━━━━━━━━━━━━™❖❖",
       emoji: "💫",
-      greetingText: "Welcome to your cosmic command hub!",
+      greetingText: "Welcome to my world!",
       categorySeparator: "❖❖❖❖❖❖❖❖❖❖❖❖❖❖\n",
     },
     {
-      header: "⚔️ ━━━⟪ *{botname}* ⟫━━━ ⚔️\n",
+      header: "⚔️ ━━━⟪ *{botname}* ⟫━━━ ®⚔️\n",
       lineSeparator: "┃ ",
       commandPrefix: "🔥 ",
-      footer: "⚔️━━━━━━━━━━━━━⚔️",
-      emoji: "🛡️",
-      greetingText: "Harness the strength of legends!",
+      footer: "⚔️━━━━━━━━━━━━━™⚔️",
+      emoji: "☠️",
+      greetingText: "Go fuck yourself 🤡!",
       categorySeparator: "⚔️⚔️⚔️⚔️⚔️⚔️⚔️⚔️⚔️⚔️⚔️⚔️\n",
     }
   ];
@@ -83,14 +83,14 @@ function sleep(ms) {
 astro_patch.smd({
   'cmdname': "menu",
   'desc': "Displays a calm, readable command list",
-  'react': '✨',
+  'react': '🤡',
   'type': 'user',
   'filename': __filename
 }, async (context, message) => {
   try {
     // Display loading messages
     const loadingMessages = [
-      "You Are Now In The Presence OF *QUEEN ALYA 👑* Be Humbled 🙇"];
+      "Ͳհҽ օղҽ ąҍօѵҽ ąӀӀ ☠️👑🌍 ìʂ ҟìղց"];
     for (const msg of loadingMessages) {
       await context.sendMessage(context.chat, { text: msg });
       await sleep(1000); // Wait for 1 second between messages
@@ -151,7 +151,7 @@ astro_patch.smd({
     }
 
     menuContent += `\n${footer}\n\n${design.emoji} *${Config.botname}* - Your assistant\n`;
-    menuContent += `©2024 *STAR KING*\n${readmore}`;
+    menuContent += `©2024 Ͳհҽ օղҽ ąҍօѵҽ ąӀӀ ☠️👑🌍*\n${readmore}`;
 
     // Send the menu with a "forwarded" tag
     const menuOptions = {
@@ -160,7 +160,7 @@ astro_patch.smd({
         'forwardingScore': 100, 
         'isForwarded': true,
         'externalAdReply': {
-          'title': 'QUEEN ALYA',
+          'title': 'ąҍօѵҽ ąӀӀ',
           'sourceUrl': 'https://whatsapp.com/channel/0029VaeW5Tw4yltQOYIO5E2D'
         }
       },
@@ -177,3 +177,5 @@ astro_patch.smd({
     await context.error(`Error: ${error.message}`, error);
   }
 });
+
+Enter file contents here
