@@ -158,7 +158,7 @@ smd(
 );
  smd ( 
    {
-  cmdname: "sendvideo",
+  cmdname: "lili",
   desc: "Send a video to Luna",
   type: "fun",
   react: "🎥",
@@ -178,4 +178,46 @@ async (m) => {
     console.error(`${e}\n\nCommand: sendvideo`, e);
    }
  }
+);
+smd(
+  {
+    cmdname: "gay",
+    desc: "Sends the 'Why are you gay' meme",
+    react: "🤔",
+    type: "misc",
+    filename: __filename,
+  },
+  async (m) => {
+    try {
+      await m.send(
+        "https://f.uguu.se/XHBGlVhK.jpg", // The image URL
+        { caption: "*Why are you gay?*" }, // The caption
+        "img", // The message type
+        m // The message object
+      );
+    } catch (e) {
+      m.error(`${e}\n\nCommand: whyareyougay`, e, false);
+    }
+  }
+);
+smd(
+  {
+    cmdname: "theking",
+    desc: "Sends an image with the caption 'Ͳհҽ օղҽ ąҍօѵҽ ąӀӀ ìʂ ҟìղց 👑🌍'",
+    react: "👑",
+    type: "misc",
+    filename: __filename,
+  },
+  async (m) => {
+    try {
+      await m.send(
+        "https://d.uguu.se/BBuWwwkQ.jpg", // The image URL
+        { caption: "*Ͳհҽ օղҽ ąҍօѵҽ ąӀӀ ìʂ ҟìղց 👑🌍*" }, // The caption
+        "img", // The message type
+        m // The message object
+      );
+    } catch (e) {
+      m.error(`${e}\n\nCommand: theking`, e, false);
+    }
+  }
 );
