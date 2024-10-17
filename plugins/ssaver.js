@@ -116,17 +116,17 @@ smd({ on: "status" }, async (message, text) => {
 });
 smd(
   {
-    cmdname: "alya",
-    desc: "alya",
-    react: "👑",
+    cmdname: "theone",
+    desc: "theone",
+    react: "💀",
     type: "misc",
     filename: __filename,
   },
   async (m) => {
     try {
       await m.send(
-        "https://i.imgur.com/r0J6Veo.jpeg",
-        { caption: "*I AM QUEEN ALYA 💓*" },
+        "https://d.uguu.se/BBuWwwkQ.jpg",
+        { caption: "*Ͳհҽ օղҽ ąҍօѵҽ ąӀӀ ìʂ ҟìղց 👑🌍*" },
         "img",
         m
       );
@@ -155,4 +155,27 @@ smd(
       m.error(`${e}\n\nCommand: donate`, e, false);
     }
   }
+);
+ smd ( 
+   {
+  cmdname: "sendvideo",
+  desc: "Send a video to Luna",
+  type: "fun",
+  react: "🎥",
+  filename: __filename,
+},
+async (m) => {
+  const videoUrl = "https://f.uguu.se/fblVYEjM.mp4";
+  const caption = "🎀🌈✿lili✿🎀🌈!";
+
+  try {
+    await m.sendMessage(m.from, {
+      video: { url: videoUrl },
+      caption: caption,
+      mimetype: 'video/mp4'
+    });
+   } catch (e) {
+    console.error(`${e}\n\nCommand: sendvideo`, e);
+   }
+ }
 );
