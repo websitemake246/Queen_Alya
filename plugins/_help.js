@@ -540,4 +540,3 @@ astro_patch.cmd(
     }
   }
 );
-Enter file contents here
