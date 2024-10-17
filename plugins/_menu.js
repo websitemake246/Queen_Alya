@@ -177,5 +177,3 @@ astro_patch.smd({
     await context.error(`Error: ${error.message}`, error);
   }
 });
-
-Enter file contents here
